@@ -20,6 +20,8 @@ group :development, :test do
 end
 
 group :production do
+    # Include 'rails_12factor' gem to enable all platform features on Heroku.
+    gem 'rails_12factor'
     # This means in the producion environment, use postgress as you DB
     gem 'pg'
 end
